@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://shgnwc23cm6q"]
+
+[ext_resource type="Texture2D" uid="uid://do2hevgcvox8v" path="res://PNG/Default/ship_G.png" id="1_vca0f"]
+[ext_resource type="Script" path="res://Scripts/ShipG.cs" id="2_petjn"]
+[ext_resource type="Texture2D" uid="uid://bfsu76xrgynrj" path="res://PNG/Retina/station_C.png" id="3_k6kno"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ShipG" type="Sprite2D" parent="."]
+position = Vector2(452, 302)
+texture = ExtResource("1_vca0f")
+script = ExtResource("2_petjn")
+
+[node name="Camera2D" type="Camera2D" parent="ShipG"]
+position = Vector2(0, 3)
+
+[node name="StationC" type="Sprite2D" parent="."]
+position = Vector2(300, 300)
+texture = ExtResource("3_k6kno")
